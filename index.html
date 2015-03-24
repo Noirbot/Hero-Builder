@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Gigantic Hero Builder</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Hero Builder</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Choose Hero <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Charnok</a></li>
+                  <li><a href="#">Uncle Sven</a></li>
+                  <li><a href="#">The Margrave</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Abilities</h2>
+          <div class="skillArea" id="LMB">
+            <img src="LMB.jpg" class="skillIcon skillBase">
+            <img src="LMB.jpg" class="skillIcon skill1 skillL left" data-skill-name="LMB Left" data-paired-id="LMB-L">
+            <img src="LMB.jpg" class="skillIcon skill2 skillL1 left" data-skill-name="LMB Left Left" data-paired-id="LMB-LL">
+            <img src="LMB.jpg" class="skillIcon skill2 skillL2 left" data-skill-name="LMB Left Right" data-paired-id="LMB-LR">
+            <img src="LMB.jpg" class="skillIcon skill1 skillR right" data-skill-name="LMB Right" data-paired-id="LMB-R">
+            <img src="LMB.jpg" class="skillIcon skill2 skillR1 right" data-skill-name="LMB Right Left" data-paired-id="LMB-RL">
+            <img src="LMB.jpg" class="skillIcon skill2 skillR2 right" data-skill-name="LMB Right Right" data-paired-id="LMB-RR">
+          </div>
+          <div class="skillArea" id="RMB">
+            <img src="RMB.jpg" class="skillIcon skillBase">
+            <img src="RMB.jpg" class="skillIcon skill1 skillL left" data-skill-name="RMB Left" data-paired-id="RMB-L">
+            <img src="RMB.jpg" class="skillIcon skill2 skillL1 left" data-skill-name="RMB Left Left" data-paired-id="RMB-LL">
+            <img src="RMB.jpg" class="skillIcon skill2 skillL2 left" data-skill-name="RMB Left Right" data-paired-id="RMB-LR">
+            <img src="RMB.jpg" class="skillIcon skill1 skillR right" data-skill-name="RMB Right" data-paired-id="RMB-R">
+            <img src="RMB.jpg" class="skillIcon skill2 skillR1 right" data-skill-name="RMB Right Left" data-paired-id="RMB-RL">
+            <img src="RMB.jpg" class="skillIcon skill2 skillR2 right" data-skill-name="RMB Right Right" data-paired-id="RMB-RR">
+          </div>
+          <div class="skillArea" id="Q">
+            <img src="Q.jpg" class="skillIcon skillBase">
+            <img src="Q.jpg" class="skillIcon skill1 skillL left" data-skill-name="Q Left" data-paired-id="Q-L">
+            <img src="Q.jpg" class="skillIcon skill2 skillL1 left" data-skill-name="Q Left Left" data-paired-id="Q-LL">
+            <img src="Q.jpg" class="skillIcon skill2 skillL2 left" data-skill-name="Q Left Right" data-paired-id="Q-LR">
+            <img src="Q.jpg" class="skillIcon skill1 skillR right" data-skill-name="Q Right" data-paired-id="Q-R">
+            <img src="Q.jpg" class="skillIcon skill2 skillR1 right" data-skill-name="Q Right Left" data-paired-id="Q-RL">
+            <img src="Q.jpg" class="skillIcon skill2 skillR2 right" data-skill-name="Q Right Right" data-paired-id="Q-RR">
+          </div>
+          <div class="skillArea" id="E">
+            <img src="E.jpg" class="skillIcon skillBase">
+            <img src="E.jpg" class="skillIcon skill1 skillL left" data-skill-name="E Left" data-paired-id="E-L">
+            <img src="E.jpg" class="skillIcon skill2 skillL1 left" data-skill-name="E Left Left" data-paired-id="E-LL">
+            <img src="E.jpg" class="skillIcon skill2 skillL2 left" data-skill-name="E Left Right" data-paired-id="E-LR">
+            <img src="E.jpg" class="skillIcon skill1 skillR right" data-skill-name="E Right" data-paired-id="E-R">
+            <img src="E.jpg" class="skillIcon skill2 skillR1 right" data-skill-name="E Right Left" data-paired-id="E-RL">
+            <img src="E.jpg" class="skillIcon skill2 skillR2 right" data-skill-name="E Right Right" data-paired-id="E-RR">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div data-spy="affix" id="buildList">
+            <h3>Selected Build</h3>
+            <ul class="list-group" id="build">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h2>Passives</h2>
+        <div class="col-md-2">
+          <ul class="list-group passive" id="passive3" class="passiveArea">
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L3: 1</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L3: 2</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L3: 3</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L3: 4</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L3: 5</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="list-group passive" id="passive5" class="passiveArea">
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L5: 1</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L5: 2</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L5: 3</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L5: 4</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L5: 5</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="list-group passive" id="passive7" class="passiveArea">
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L7: 1</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L7: 2</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L7: 3</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L7: 4</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L7: 5</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="list-group passive" id="passive9" class="passiveArea">
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L9: 1</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L9: 2</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L9: 3</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L9: 4</a></li>
+            <li class="list-group-item"><a href="javascript:void(0)">Passive L9: 5</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script type="text/javascript">
+      $(".passiveArea li").click(function (event) {
+        var ele = $(event.target);
+
+        if (ele.hasClass("disabled")) {
+          return;
+        }
+
+        ele.toggleClass("selected");
+
+        $("#" + ele.parent().attr("id") + " li").not(ele).toggleClass("disabled");
+      });
+
+      $(".skillIcon:not(.skillBase)").click(function (event) {
+        var ele = $(event.target);
+
+        if (ele.hasClass("disabled")) {
+          return;
+        }
+
+        if (ele.hasClass("skill2") && !($("#" + ele.parent().attr("id") + " .skill1.selected").length)) {
+          return;
+        }
+
+        if (ele.hasClass("skill1") && ($("#" + ele.parent().attr("id") + " .skill2.selected").length)) {
+          return;
+        }
+
+        if (ele.hasClass("selected")) {
+          $("#" + ele.data("pairedId")).remove();
+        } else {
+          $("#build").append("<li class='list-group-item' id='" + ele.data("pairedId") + "'>" + ele.data("skillName") + "</li>");
+        }
+        ele.toggleClass("selected")
+
+        if (ele.hasClass("skill1")) {
+          if (ele.hasClass("left")) {
+            $("#" + ele.parent().attr("id") + " .right").not(ele).toggleClass("disabled");
+          } else if (ele.hasClass("right")) {
+            $("#" + ele.parent().attr("id") + " .left").not(ele).toggleClass("disabled");
+          }
+        } else {
+          if (ele.hasClass("left")) {
+            $("#" + ele.parent().attr("id") + " .left.skill2").not(ele).toggleClass("disabled");
+          } else if (ele.hasClass("right")) {
+            $("#" + ele.parent().attr("id") + " .right.skill2").not(ele).toggleClass("disabled");
+          }
+        }
+
+      });
+    </script>
+  </body>
+</html>

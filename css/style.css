@@ -1,0 +1,68 @@
+#buildList {
+  display: block;
+}
+
+.skillArea {
+  position: relative;
+  border: 1px solid black;
+  height: 300px;
+  margin-bottom: 5px;
+}
+
+.skillIcon {
+  width: 10%;
+  border: outset 5px black;
+}
+
+.skillBase {
+  position: absolute;
+  top: 5%;
+  left: 45%
+}
+
+.skill1 {
+  position: absolute;
+  top: 35%
+}
+
+.skill2 {
+  position: absolute;
+  top: 70%;
+}
+
+.skillL {
+  left: 23%
+}
+
+.skillR {
+  left: 67%;
+}
+
+.skillL1 {
+  left: 12%;
+}
+
+.skillL2 {
+  left: 34%;
+}
+
+.skillR1 {
+  left: 56%
+}
+
+.skillR2 {
+  left: 78%;
+}
+
+img.selected {
+  border: outset 5px #CCC;
+}
+
+li.selected {
+ color: blue;
+}
+
+.disabled {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
